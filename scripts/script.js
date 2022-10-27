@@ -1,5 +1,5 @@
 const sortBTN = document.querySelector('#sortBTN')
-const resultado = document.querySelector('#resultado h1')
+const resultado = document.querySelector('#result h1')
 var interval
 
 

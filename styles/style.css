@@ -1,28 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Telugu:wght@700&display=swap");
 html {
-  height: 100vh;
-  width: 100vw;
   overflow: hidden;
+}
+html * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 html body {
   background: #f6d365 0%;
 }
 html body main {
-  height: 90vh;
-  width: 100vw;
   display: flex;
   justify-content: space-between;
 }
-html body main #sortBTN-container {
+
+.img-cont {
+  height: 90vh;
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.img-cont > img {
+  height: 100%;
+  object-fit: fill;
+}
+.img-cont .left {
+  transform: rotateY(180deg);
+}
+
+.middle-cont {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 90vh;
+  width: 30vw;
+  gap: 30px;
 }
-html body main #sortBTN-container #title {
+.middle-cont .title {
   width: 30vw;
 }
-html body main #sortBTN-container #sortBTN {
+.middle-cont .sort-button {
   width: 15vw;
   height: 10vh;
   border-radius: 30px;
@@ -31,44 +52,29 @@ html body main #sortBTN-container #sortBTN {
   place-items: center;
   cursor: pointer;
 }
-html body main #sortBTN-container #sortBTN img {
+.middle-cont .sort-button img {
   width: 3vw;
 }
-html body main #sortBTN-container #resultado {
+.middle-cont .result {
   display: grid;
   place-items: center;
   background: #6695FF;
   width: 15vw;
-  height: 30vh;
-  margin-top: 10vh;
+  height: fit-content;
   border-radius: 10px;
 }
-html body main #sortBTN-container #resultado h1 {
-  font-size: 9rem;
+.middle-cont .result h1 {
+  font-size: 4rem;
 }
-html body main .container-img {
-  height: 90vh;
-  width: 40vw;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-html body main .container-img > img {
-  width: 100%;
-  object-fit: cover;
-}
-html body main .container-img #img-left {
-  transform: rotateY(180deg);
-}
-html body footer {
+
+footer .references {
   height: 10vh;
   width: 100vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 100px;
 }
-html body footer a {
+footer .references a {
   color: black;
 }
 
