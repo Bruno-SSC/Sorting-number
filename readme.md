@@ -5,14 +5,16 @@
 
 Aplicação web com finalidade de sortear um número de forma aleatória.
 
-<h2 align="left"> Objetivos 📌 </h2>
+>[Acessar](https://luck-num.netlify.app)
+
+<h2 align="left"> Objetivo 📌 </h2>
 
 - Melhorar skills como front-end developer
 
 ---
-<h3 align="center"> Design 📝 </h3>
+<h3 align="center"> Home 📷 </h3>
 
-<div height="590em"><img src="./images/desktop-design.jpg" alt="imagem"></div>
+<img height="300em" src="./styles/assets/desktop-design.jpg" alt="imagem">
 
 <h3 align="center"> Tecnologias utilizadas 🤖 </h3>
 
