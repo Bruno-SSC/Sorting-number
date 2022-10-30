@@ -2,27 +2,38 @@
     display: flex
     flex-direction: column
     align-items: center
-    height: 90vh
     width: 30vw
-    gap: 30px
+    height: 90vh
     .title
-        width: 30vw
+        width: 100%
+        display: flex
+        justify-content: center
+        align-items: flex-end
+        margin-top: 10%
+        > img
+            height: 80%
+            object-fit: fill
     .sort-button
-        width: 15vw
-        height: 10vh
+        width: 50%
+        height: 10%
         border-radius: 30px
         background: #6695FF
         display: grid
         place-items: center
         cursor: pointer
-        img
+        margin-bottom: 30px
+        > img
             width: 3vw
     .result
         display: grid
         place-items: center
         background: #6695FF
-        width: 15vw
+        width: fit-content
+        padding: 1% 15%
         height: fit-content
         border-radius: 10px
         h1
-            font-size: 4rem
+            font-size: 5vw
+            transition: all 1s ease-in-out
+        .done
+            color: white

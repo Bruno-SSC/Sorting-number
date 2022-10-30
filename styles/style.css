@@ -17,18 +17,18 @@ html body main {
   justify-content: space-between;
 }
 
-.img-cont {
+main .img-cont {
   height: 90vh;
-  width: 30vw;
+  width: 35vw;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
 }
-.img-cont > img {
-  height: 100%;
+main .img-cont > img {
+  height: 80%;
   object-fit: fill;
 }
-.img-cont .left {
+main .left {
   transform: rotateY(180deg);
 }
 
@@ -36,35 +36,48 @@ html body main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 90vh;
   width: 30vw;
-  gap: 30px;
+  height: 90vh;
 }
 .middle-cont .title {
-  width: 30vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 10%;
+}
+.middle-cont .title > img {
+  height: 80%;
+  object-fit: fill;
 }
 .middle-cont .sort-button {
-  width: 15vw;
-  height: 10vh;
+  width: 50%;
+  height: 10%;
   border-radius: 30px;
   background: #6695FF;
   display: grid;
   place-items: center;
   cursor: pointer;
+  margin-bottom: 30px;
 }
-.middle-cont .sort-button img {
+.middle-cont .sort-button > img {
   width: 3vw;
 }
 .middle-cont .result {
   display: grid;
   place-items: center;
   background: #6695FF;
-  width: 15vw;
+  width: fit-content;
+  padding: 1% 15%;
   height: fit-content;
   border-radius: 10px;
 }
 .middle-cont .result h1 {
-  font-size: 4rem;
+  font-size: 5vw;
+  transition: all 1s ease-in-out;
+}
+.middle-cont .result .done {
+  color: white;
 }
 
 footer .references {
@@ -76,6 +89,45 @@ footer .references {
 }
 footer .references a {
   color: black;
+}
+
+@media screen and (max-width: 1000px) {
+  main .img-cont {
+    display: none;
+  }
+  main .middle-cont {
+    width: 100vw;
+    height: 70vh;
+    gap: 30px;
+  }
+  main .middle-cont .title > img {
+    width: 100%;
+  }
+  main .middle-cont .sort-button {
+    height: 10vh;
+  }
+  main .middle-cont .sort-button > img {
+    width: 6vh;
+  }
+  main .middle-cont .result {
+    height: 10vh;
+    border-radius: 25px;
+  }
+  main .middle-cont .result h1 {
+    font-size: 5vh;
+  }
+  footer {
+    width: 80%;
+    margin-top: 10%;
+  }
+  footer .references {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .references a:nth-child(1) {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
